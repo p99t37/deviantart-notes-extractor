@@ -6,7 +6,7 @@
 <h1 align="center">DA Notes Scraper v11</h1>
 
 <p align="center">
-  <strong>Archive your entire DeviantArt Notes inbox as beautiful, readable conversation files — before they're gone forever.</strong>
+  <strong>Archive your entire DeviantArt Notes inbox as beautiful, readable conversation files - before they're gone forever.</strong>
 </p>
 
 <p align="center">
@@ -29,15 +29,15 @@
 
 ## ✨ Features
 
-- **Full conversation reconstruction** — rebuilds the back-and-forth from DA's messy quoted-reply format
-- **Both sides preserved** — your sent messages are extracted from quoted replies
-- **Clickable links** — real URLs restored from HTML, not truncated `www.deviantart.com/...` display text
-- **Deduplication** — DA quotes the entire thread in every reply; this strips all that out
-- **Dual themes** — Modern Dark (default) and Nostalgia Light (classic 2008-era DA olive/cream)
-- **International dates** — "5th September 2025" format
-- **Auto-resume** — close your browser, come back tomorrow, it picks up where it left off
-- **One file per contact** — self-contained HTML files you can view offline forever
-- **100% local** — nothing is sent anywhere, all data stays on your computer
+- **Full conversation reconstruction** - rebuilds the back-and-forth from DA's messy quoted-reply format
+- **Both sides preserved** - your sent messages are extracted from quoted replies
+- **Clickable links** - real URLs restored from HTML, not truncated `www.deviantart.com/...` display text
+- **Deduplication** - DA quotes the entire thread in every reply; this strips all that out
+- **Dual themes** - Modern Dark (default) and Nostalgia Light (classic 2008-era DA olive/cream)
+- **International dates** - "5th September 2025" format
+- **Auto-resume** - close your browser, come back tomorrow, it picks up where it left off
+- **One file per contact** - self-contained HTML files you can view offline forever
+- **100% local** - nothing is sent anywhere, all data stays on your computer
 
 <p align="center">
   <img src="screenshots/dark-theme.png" alt="Modern Dark theme" width="700">
@@ -53,7 +53,7 @@
 
 ## 📦 Installation
 
-### Step 1 — Install Tampermonkey
+### Step 1 - Install Tampermonkey
 
 Tampermonkey is a free browser extension that runs userscripts on websites.
 
@@ -67,7 +67,7 @@ Tampermonkey is a free browser extension that runs userscripts on websites.
   <!-- REPLACE: Screenshot of browser toolbar showing the Tampermonkey icon -->
 </p>
 
-### Step 2 — Install the Script
+### Step 2 - Install the Script
 
 1. Click the **Tampermonkey icon** in your toolbar → **Dashboard**
 2. Click the **`+` tab** (Create a new script)
@@ -88,7 +88,7 @@ Tampermonkey is a free browser extension that runs userscripts on websites.
   <!-- REPLACE: Screenshot of the Tampermonkey editor with the script pasted, showing the header -->
 </p>
 
-### Step 3 — Verify
+### Step 3 - Verify
 
 Click the Tampermonkey icon. You should see **"DeviantArt Notes Scraper v11"** listed and enabled (green toggle).
 
@@ -105,7 +105,7 @@ Click the Tampermonkey icon. You should see **"DeviantArt Notes Scraper v11"** l
 
 1. Go to **[deviantart.com/messages/notes](https://www.deviantart.com/messages/notes)**
 2. Make sure you're **logged in**
-3. Wait 2–3 seconds — the **scraper panel** appears in the top-right corner
+3. Wait 2–3 seconds - the **scraper panel** appears in the top-right corner
 
 <p align="center">
   <img src="screenshots/panel-on-page.png" alt="Scraper panel on DA Notes page" width="700">
@@ -117,16 +117,16 @@ Click the Tampermonkey icon. You should see **"DeviantArt Notes Scraper v11"** l
 | Button | What it does |
 |--------|-------------|
 | **▶ Start** | Begins scraping from the current page |
-| **⏹ Stop** | Pauses scraping — progress is saved |
+| **⏹ Stop** | Pauses scraping - progress is saved |
 | **💾 Download** | Generates and downloads your archive files |
 | **Clear data** | Deletes all saved data (**cannot be undone**) |
 
 ### Start Scraping
 
 1. Click **▶ Start**
-2. Watch the log — it shows each note being captured in real time
+2. Watch the log - it shows each note being captured in real time
 3. When a page is done, it **auto-navigates** to the next page
-4. The page reloads (this is normal) — the script auto-resumes after 3 seconds
+4. The page reloads (this is normal) - the script auto-resumes after 3 seconds
 
 <p align="center">
   <img src="screenshots/scraping-progress.png" alt="Scraping in progress" width="350">
@@ -137,7 +137,7 @@ Click the Tampermonkey icon. You should see **"DeviantArt Notes Scraper v11"** l
 > **You can close your browser and come back later.** Progress is saved. Just navigate back to your Notes page and the scraper auto-resumes.
 
 > [!WARNING]
-> **Don't click notes manually** while the scraper is running — it'll interfere with the click sequence. Other tabs and windows are fine.
+> **Don't click notes manually** while the scraper is running - it'll interfere with the click sequence. Other tabs and windows are fine.
 
 ### Time Estimates
 
@@ -152,11 +152,11 @@ Click the Tampermonkey icon. You should see **"DeviantArt Notes Scraper v11"** l
 
 Click **💾 Download** at any time (you don't have to wait for the full scrape to finish).
 
-Your browser may ask to allow multiple downloads — click **Allow**.
+Your browser may ask to allow multiple downloads - click **Allow**.
 
 | File | Description |
 |------|-------------|
-| `da-notes_Username.html` | One file per contact — all conversations, styled and readable |
+| `da-notes_Username.html` | One file per contact - all conversations, styled and readable |
 | `da-notes-summary.csv` | Spreadsheet summary of contacts, threads, and note counts |
 | `da-notes-backup.json` | Raw JSON backup of all scraped data |
 
@@ -169,8 +169,8 @@ Your browser may ask to allow multiple downloads — click **Allow**.
 
 ## 👀 Viewing Your Archive
 
-1. **Double-click** any `da-notes_Username.html` file — it opens in your browser
-2. Files are **completely self-contained** — no internet needed, no dependencies
+1. **Double-click** any `da-notes_Username.html` file - it opens in your browser
+2. Files are **completely self-contained** - no internet needed, no dependencies
 3. Click the **theme button** in the subheader to switch between Dark and Light
 
 <p align="center">
@@ -183,8 +183,8 @@ Your browser may ask to allow multiple downloads — click **Allow**.
 | Element | Description |
 |---------|-------------|
 | **Thread boxes** | Conversations grouped by subject line |
-| **Messages** | Chronological order — oldest at top, newest at bottom |
-| **Sender names** | Color-coded — your messages vs. theirs |
+| **Messages** | Chronological order - oldest at top, newest at bottom |
+| **Sender names** | Color-coded - your messages vs. theirs |
 | **Dates** | International format: "5th September 2025" |
 | **Links** | Real, clickable URLs |
 | **Raw data** | Expandable toggle at the bottom of each thread for verification |
@@ -208,7 +208,7 @@ Your browser may ask to allow multiple downloads — click **Allow**.
 1. Click **⏹ Stop**
 2. Manually go to `deviantart.com/messages/notes?folder_id=1&page=1`
 3. Wait for the panel to appear
-4. Click **▶ Start** — it'll skip already-completed pages
+4. Click **▶ Start** - it'll skip already-completed pages
 </details>
 
 <details>
@@ -241,7 +241,7 @@ Thread reconstruction depends on detecting username patterns in the text. Unusua
 
 ### The Problem
 
-DA Notes work like email — every reply quotes the entire previous conversation. A 20-message thread means note #20 contains all 20 messages, note #19 has 19, etc. Your sent messages only exist as quoted text inside the other person's replies. Without reconstruction, you'd see massive duplication and lose half the conversation.
+DA Notes work like email - every reply quotes the entire previous conversation. A 20-message thread means note #20 contains all 20 messages, note #19 has 19, etc. Your sent messages only exist as quoted text inside the other person's replies. Without reconstruction, you'd see massive duplication and lose half the conversation.
 
 ### Scraping
 
@@ -258,7 +258,7 @@ The script clicks each note in the inbox list, waits for the detail panel to loa
 
 ### Link Restoration
 
-DA's text view truncates URLs to `www.deviantart.com/user/...` — but the HTML `href` still has the full URL. The scraper extracts every link from the HTML, builds a lookup table, and replaces truncated display text with real URLs.
+DA's text view truncates URLs to `www.deviantart.com/user/...` - but the HTML `href` still has the full URL. The scraper extracts every link from the HTML, builds a lookup table, and replaces truncated display text with real URLs.
 
 ---
 
@@ -268,8 +268,8 @@ DA's text view truncates URLs to `www.deviantart.com/user/...` — but the HTML 
 |----------|--------|
 | Where is data stored? | Tampermonkey's local storage in your browser, then as files in your Downloads folder |
 | Is anything sent online? | **No.** Zero network requests. The script only reads DA pages you're already viewing |
-| Can I delete all data? | Yes — click **Clear data**, or uninstall the script |
-| Where does the script run? | Only on `deviantart.com/messages/notes` — does nothing on any other site |
+| Can I delete all data? | Yes - click **Clear data**, or uninstall the script |
+| Where does the script run? | Only on `deviantart.com/messages/notes` - does nothing on any other site |
 
 ---
 
@@ -289,7 +289,7 @@ If you get a new version:
 
 ## 📄 License
 
-MIT — do whatever you want with it.
+MIT - do whatever you want with it.
 
 ---
 
